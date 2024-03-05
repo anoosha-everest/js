@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Choose your colour</title>
+        <meta charset="UTF-8">
+        <title>my website</title>
         <link rel="stylesheet" href="./index.css">
-        
     </head>
-
     <body>
-        <div>
-            <button class="button button1" onclick="red()">Red</button>
-            <button class="button button2" onclick="green()">Green</button>
-            <button class="button button3" onclick="yellow()">Yellow</button>
-            <button class="button button4" onclick="blue()">Blue</button>
-            <p class="name">Hello</p>
+        <h1 class="heading">Welcome to Everest Engineering!</h1>
+        <div class="content">
+            <h3 onclick="show('section')">Creative</h3>
+            <h3 onclick="show('form')">Form</h3>
+            <h3 onclick="show('about')">About</h3>
         </div>
-        <script src="./index.js"></script>
+        <form class="tab-content" id="form">
+            <div class="tab">
+            <div class="input-container">
+                <label>Name:</label>
+                <input id="name" type="text" name="name">
+            </div>
+            <div class="input-container">
+                <label>Password:</label>
+                <input id="password" type="password" name="password">
+            </div>
+            <div class="input-container">
+                <label>Email:</label>
+                <input id="email" type="email" name="email">
+            </div>
+            <button>submit</button>
+        </div>
+        </form>
+        <div class="tab-content" id="section">
+            <section class="section1">
+                A bold, people first community, building digital products for these who did things differently.We care about doing the right thing
+                Starting by understanding that we are different, and that makes us better.  That is why collaboration is at the core of how we think
+                 and approach products, processes and principles, without forgetting to have some fun in the way.
+            </section>
+            <section class="section2">
+                A bold, people first community, building digital products for these who did things differently.We care about doing the right thing
+                Starting by understanding that we are different, and that makes us better.  That is why collaboration is at the core of how we think
+                 and approach products, processes and principles, without forgetting to have some fun in the way.
+            </section>
+            <section class="section3">
+                A bold, people first community, building digital products for these who did things differently.We care about doing the right thing
+                Starting by understanding that we are different, and that makes us better.  That is why collaboration is at the core of how we think
+                 and approach products, processes and principles, without forgetting to have some fun in the way.
+            </section>
+        </div>
+        <div class="tab-content" id="about">
+            <section class="section1">
+                A bold, people first community, building digital products for these who did things differently.We care about doing the right thing
+                Starting by understanding that we are different, and that makes us better.  That is why collaboration is at the core of how we think
+                 and approach products, processes and principles, without forgetting to have some fun in the way.
+            </section>
+        </div>
+        <script src="./index.js">9</script>
     </body>
 </html>

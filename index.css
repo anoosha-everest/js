@@ -1,69 +1,35 @@
- body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightgray;
-    height: 100vh;
-       } 
- p {
-    font-size: 5rem;
+form input{
+    width:50%;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+.tab{
+    display:block;
+    width:50%;
+}
+.heading{
+    color:brown;
     text-align: center;
- }
- .button {
-    background-color: #04AA6D; 
-    border: none;
-    color: lightgray;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button1 {
-    background-color: lightgray; 
-    color: black; 
-    border: 2px solid red;
-  }
-  
-  .button1:hover {
-    background-color: red;
-    color: lightgray;
-  }
-  .button2 {
-    background-color: lightgray; 
-    color: black; 
-    border: 2px solid green;
-  }
-  
-  .button2:hover {
-    background-color: green;
-    color: lightgray;
-  }
-  
-  .button3 {
-    background-color: lightgray; 
-    color: black; 
-    border: 2px solid yellow;
-  }
-  
-  .button3:hover {
-    background-color: yellow;
-    color: lightgray;
-  }
-  
-  .button4 {
-    background-color: lightgray;
-    color: black;
-    border: 2px solid blue;
-  }
-  
-  
-  
-  .button4:hover {
-    background-color:blue;
-    color: lightgray;
-  }
+}
+.content{
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+}
+.tab-content{
+    display:none;
+}
+form input[type="submit"]{
+    max-width:max-content;
+}
+.input-container{
+    width:50%;
+}
+.input-container label{
+    font-size:14px;
+}
+.creative{
+    display:flex;
+}

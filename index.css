@@ -3,8 +3,19 @@ form input{
     display: block;
     box-sizing: border-box;
 }
+.count{
+    text-align: center;
+}
+#button1,#button2,#button3{
+    background-color: lightblue;
+}
+body{
+    background-color: rgb(236, 202, 207);
+}
 
-
+h3:hover{
+    color: blue;
+}
 .tab{
     display:block;
     width:50%;

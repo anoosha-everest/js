@@ -7,16 +7,25 @@
     </head>
     <body>
         <h1 class="heading">Welcome to Everest Engineering!</h1>
+        <div class="count">
+            <h2 id="cnt1">0</h2>
+            <button id="button1">start</button>
+            <button id="button2">stop</button>
+            <button id="button3">resume</button>
+        </div>
         <div class="content">
-            <h3 onclick="show('section')">Creative</h3>
+            <!-- <h3 onclick="show('section')">Creative</h3>
             <h3 onclick="show('form')">Form</h3>
-            <h3 onclick="show('about')">About</h3>
+            <h3 onclick="show('about')">About</h3> -->
+            <h3 id="content-section"> Creative</h3>
+            <h3 id="content-form"> Form</h3>
+            <h3 id="content-about"> About</h3>
         </div>
         <form class="tab-content" id="form">
             <div class="tab">
             <div class="input-container">
                 <label>Name:</label>
-                <input id="name" type="text" name="name">
+                <input id="name" type="text" name="name" autocomplete="off">
             </div>
             <div class="input-container">
                 <label>Password:</label>

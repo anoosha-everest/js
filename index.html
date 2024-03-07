@@ -10,16 +10,19 @@
         <div class="count">
             <h2 id="cnt1">0</h2>
             <button id="button1">start</button>
-            <button id="button2">stop</button>
+            <button id="button2">pause</button>
             <button id="button3">resume</button>
+            <button id="button4">stop</button>
         </div>
-        <div class="content">
+        
+        <div class="content" id="tabs">
             <!-- <h3 onclick="show('section')">Creative</h3>
             <h3 onclick="show('form')">Form</h3>
             <h3 onclick="show('about')">About</h3> -->
-            <h3 id="content-section"> Creative</h3>
-            <h3 id="content-form"> Form</h3>
-            <h3 id="content-about"> About</h3>
+            <h3 activetabid="section" id="content-section"> Creative</h3>
+            <h3 activetabid="form" id="content-form"> Form</h3>
+            <h3 activetabid="about" id="content-about"> About</h3>
+            <h3 activetabid="mylist" id="content-mylist">List</h3>
         </div>
         <form class="tab-content" id="form">
             <div class="tab">
@@ -38,6 +41,11 @@
             <button>submit</button>
         </div>
         </form>
+        <div class="tab-content" id="mylist">
+            <div id="list">
+
+            </div>
+        </div>
         <div class="tab-content" id="section">
             <section class="section1">
                 A bold, people first community, building digital products for these who did things differently.We care about doing the right thing

@@ -6,7 +6,7 @@ form input{
 .count{
     text-align: center;
 }
-#button1,#button2,#button3{
+#button1,#button2,#button3,#button4{
     background-color: lightblue;
 }
 body{
@@ -44,3 +44,17 @@ form input[type="submit"]{
 .creative{
     display:flex;
 }
+.delBtn{
+    border-radius: 5px;
+    background-color: aquamarine;
+    height:20px;
+    display: inline-block;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+  table{
+    width:50%;
+    border-collapse: collapse;
+  }

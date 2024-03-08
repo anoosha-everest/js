@@ -4,6 +4,45 @@
 // document.getElementById('content-mylist').addEventListener('mouseover',()=>show('mylist'));
 
 
+const person=function(fname,lname,email,phone){
+    this.firstname=fname,
+    this.lastname=lname;
+    this.email=email;
+    this.phone=phone;
+    // this.get_info=function(){
+    //     return this.firstname+" "+this.lastname+" "+this.email+" "+this.phone;
+    // }
+}
+
+const persons=[
+    new person("Anoosha","Sanugula","anoosha@gmail.com","1234567890"),
+    new person("Soujanya","Hongandhe","soujanya@gmail.com","9823748890"),
+    new person("Surya","Gayakwad","surya@gmail.com","9876667890"),
+    new person("Tunnu","Hongandhe","tunnu@gmail.com","9234567890"),
+    new person("Hareesh","Sanugula","anoosha@gmail.com","6789567890")
+]
+// console.log("persons",persons);
+// persons.forEach(person=>console.log(person.get_info()));
+
+var str = "";
+str='<tr>'+'<th>FirstName</th>'+'<th>LastName</th>'+'<th>Email</th>'+'<th>Phone</th>'+'</tr>';
+
+    for (var item in persons) {
+        str += '<tr>';
+        for (idata in persons[item]) {
+            str += '<td>' + persons[item][idata] + '</td>';
+        }
+        str += '</tr>';
+    }
+    var containerEle = document.getElementById("table");
+    var myhtml1 = '<table>';
+    myhtml1+=str;
+    myhtml1+= '</table>';
+    containerEle.innerHTML = myhtml1;
+    
+
+
+
 const tabs=document.getElementById('tabs');
 tabs.addEventListener('click',(e)=>clickHandler(e,'tabs'));
 function show(tabId){
@@ -121,4 +160,12 @@ form.addEventListener('submit',function(event){
     result.innerHTML = '<h2>Submitted Form Data:</h2>' +"Name="+ (name) +" password="+ (pass)+" email="+(email);
             document.body.appendChild(result);
 });
+
+
+function toggleNavbar() {
+    var navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}
+
+
 console.log("hello");
